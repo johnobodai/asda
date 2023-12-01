@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASDA Learning Center - Blog</title>
+
+    <!-- Common Styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            color: #333;
+            background-image: url('/static/img/background1.png'); /* Add the path to your image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #main-content {
+            max-width: 80%;
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        h2 {
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .blog-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .blog-list li {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            max-width: 80%;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{{ url_for('read_home') }}">Home</a>
+        <a href="{{ url_for('read_about') }}">About</a>
+        <a href="{{ url_for('read_courses') }}">Courses</a>
+        <a href="{{ url_for('read_staff') }}">Staff</a>
+        <a href="{{ url_for('read_blog') }}">Blog</a>
+        <a href="{{ url_for('read_contact') }}">Contact</a>
+    </nav>
+
+    <!-- Main Content - Blog -->
+    <div id="main-content">
+        <h2>Latest Blog Posts</h2>
+        <ul class="blog-list">
+            <li>
+                <h3>Exploring New Teaching
+

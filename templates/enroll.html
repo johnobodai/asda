@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Enroll Now{% endblock %}
+
+{% block content %}
+    <section class="enroll">
+        <h2>Enroll Now</h2>
+        <p>Ready to join {{ school_name }}? Fill out the form below to begin the enrollment process.</p>
+
+        <form method="post" action="{{ url_for('enroll_confirmation') }}">
+            <label for="student_name">Student Name:</label>
+            <input type="text" id="student_name" name="student_name" required>
+
+            <label for="parent_name">Parent/Guardian Name:</label>
+            <input type="text" id="parent_name" name="parent_name" required>
+
+            <label for="contact_email">Contact Email:</label>
+            <input type="email" id="contact_email" name="contact_email" required>
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number" required>
+
+            <label for="grade_level">Grade Level:</label>
+            <select id="grade_level" name="grade_level" required>
+                <option value="pre-school">Pre-School</option>
+                <option value="elementary">Elementary</option>
+                <option value="middle-school">Middle School</option>
+                <option value="high-school">High School</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+{% endblock %}
+

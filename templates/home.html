@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASDA Learning Center - Home</title>
+
+    <!-- Top Section Styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('/static/img/background1.png');
+            background-size: cover;
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Keep the background image fixed */
+            color: #fff; /* Set text color to white */
+        }
+
+        #top-section {
+            background-color: #f5f5f5;
+            padding: 20px 0;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        .top-section-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .school-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .school-name {
+            font-size: 36px;
+            margin-right: 20px;
+            color: #000; /* Set text color to black */
+        }
+
+        .contact-info {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .email,
+        .phone {
+            margin-right: 10px;
+            color: #000; /* Set text color to black */
+        }
+
+        .enroll-button a {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Bottom Section Styles */
+        #bottom-section {
+            background-color: #ecf0f1;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Search Button Styles */
+        .search-button {
+            margin-left: 20px;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            border: 1px solid #333;
+            border-radius: 3px;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Body Section Styles */
+        #body-section {
+            max-width: 80%;
+            margin: 40px auto; /* Added margin to move it down */
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .school-name {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .contact-text {
+            font-size: 24px;
+            cursor: pointer;
+            color: #3498db;
+            margin-top: 10px;
+        }
+
+        .contact-text:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Section Styles */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            max-width: 80%;
+            margin: 500px auto 80px; /* Added margin for spacing */
+        }
+
+        .footer-box {
+            width: 22%; /* Adjust width as needed */
+        }
+
+        .footer-box h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-box p {
+            font-size: 14px;
+        }
+    </style>
+    <!-- Add your CSS links and other head elements here -->
+</head>
+
+<body>
+    <!-- Top Section Content -->
+    <section id="top-section">
+        <div class="top-section-content">
+            <div class="school-info">
+                <div class="school-name">ASDA Learning Center</div>
+                <div class="contact-info">
+                    <div class="email" style="color: #000;">Email: info@school.com</div>
+                    <div class="phone" style="color: #000;">Phone: +123 456 7890</div>
+                </div>
+            </div>
+            <div class="enroll-button">
+                <a href="{{ url_for('read_enroll') }}">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Section -->
+    <section id="bottom-section">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('read_home') }}">Home</a></li>
+                <li><a href="{{ url_for('read_about') }}">About</a></li>
+                <li><a href="{{ url_for('read_courses') }}">Courses</a></li>
+                <li><a href="{{ url_for('read_staff') }}">Staff</a></li>
+                <li><a href="{{ url_for('read_blog') }}">Blog</a></li>
+                <li><a href="{{ url_for('read_contact') }}">Contact</a></li>
+            </ul>
+            <div class="search-button">
+                <form action="#" method="get">
+                    <input type="text" name="search" placeholder="Search">
+                    <button type="submit">
+                                        <button type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Body Section -->
+    <section id="body-section">
+        <div class="school-name">Welcome to ASDA Learning Center</div>
+        <p>
+            At ASDA Learning Center, we are committed to providing high-quality education
+            and fostering an environment that encourages intellectual curiosity, critical thinking,
+            and personal growth. Our dedicated faculty and state-of-the-art facilities are here to
+            support your academic journey.
+        </p>
+        <p>
+            Explore our website to learn more about our courses, talented staff, and exciting
+            extracurricular activities. Whether you are a prospective student, parent, or community
+            member, we welcome you to be a part of our learning community.
+        </p>
+        <div class="contact-text" onclick="window.location.href='{{ url_for('read_contact') }}'">Contact Us</div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-box" id="teachers">
+            <h2>Our Dedicated Teachers</h2>
+            <p>
+                Meet our experienced and passionate educators who are dedicated to
+                providing a nurturing learning experience for all students.
+            </p>
+        </div>
+
+        <div class="footer-box" id="facilities">
+            <h2>Modern Facilities</h2>
+            <p>
+                Explore our modern facilities equipped with the latest technology to
+                enhance the learning environment.
+            </p>
+        </div>
+
+        <div class="footer-box" id="books-library">
+            <h2>Extensive Library</h2>
+            <p>
+                Immerse yourself in our extensive collection of books and resources
+                available in the library, catering to diverse interests and subjects.
+            </p>
+        </div>
+
+        <div class="footer-box" id="club-section">
+            <h2>Extracurricular Activities</h2>
+            <p>
+                Discover the vibrant club section, where students can engage in various
+                extracurricular activities, fostering teamwork and creativity.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+

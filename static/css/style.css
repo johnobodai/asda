@@ -1,0 +1,373 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1em;
+}
+
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+	flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+	margin-top: auto;
+}
+
+.hero {
+    text-align: center;
+    background-color: #ddd;
+    padding: 2em;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.feature {
+    text-align: center;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    background-color: #ddd;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+/* Add these styles to support the new features */
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.feature {
+    text-align: center;
+    padding: 1em;
+}
+
+.latest-news {
+    margin-top: 2em;
+}
+
+.latest-news h2 {
+    text-align: center;
+}
+
+.news-item {
+    margin-top: 1em;
+}
+
+.quick-links {
+    margin-top: 2em;
+}
+
+.quick-links h2 {
+    text-align: center;
+}
+
+.link-item {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.link-item a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.link-item a:hover {
+    background-color: #555;
+}
+
+/* Add the following styles to your existing CSS file */
+
+.about {
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+.vision-mission {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.vision, .mission {
+    flex: 1;
+}
+
+.vision h3, .mission h3, .why-choose h3, .community-involvement h3, .join-us h3 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.why-choose ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.why-choose li {
+    margin-bottom: 1em;
+}
+
+.join-us {
+    margin-top: 2em;
+}
+
+/* Feel free to customize the styles based on your preferences */
+
+
+
+/* Add the following styles to your existing CSS file */
+
+.enroll {
+    max-width: 600px;
+    margin: 2em auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input,
+select {
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 0.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* ... Your existing styles ... */
+
+.course-content {
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+.course-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-list li {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.featured-courses {
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+.featured-courses h3 {
+    color: #333;
+}
+
+.feature-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.feature-list li {
+    background-color: #3498db;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.course-features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.course-features .feature {
+    flex: 1;
+    text-align: center;
+    padding: 1em;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 1em;
+}
+
+/* ... Your existing styles ... */
+
+
+
+
+/* Add these styles to your existing CSS file */
+
+/* Top Section Styles */
+#top-section {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: right;
+}
+
+.top-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.school-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.school-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.email, .phone {
+    margin-bottom: 0.5em;
+}
+
+.enroll-button a {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.enroll-button a:hover {
+    background-color: #555;
+}
+
+/* Bottom Section Styles */
+#bottom-section {
+    margin-top: 1em;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 1em;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input, button {
+    margin-left: 0.5em;
+}
+

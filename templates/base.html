@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+    <title>{% block title %}School Website{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('read_courses') }}">Courses</a></li>
+            <li><a href="{{ url_for('read_home') }}">Home</a></li>
+            <li><a href="{{ url_for('read_about') }}">About Us</a></li>
+            <li><a href="{{ url_for('read_enroll') }}">Enroll Now</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+
+    <header>
+        <h1>{{ school_name }}</h1>
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2023 {{ school_name }}</p>
+    </footer>
+</body>
+</html>
+

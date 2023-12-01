@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASDA Learning Center - About Us</title>
+
+    <!-- Common Styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('/static/img/background1.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: #333;
+            opacity: 0.9; /* Adjust the opacity as needed */
+            font-size: 18px; /* Adjust the font size as needed */
+        }
+
+        #main-content {
+            max-width: 80%;
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Opacity for the content area */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #3498db;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2em; /* Adjust the font size as needed */
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1em; /* Adjust the font size as needed */
+        }
+
+        .vision-mission,
+        .why-choose,
+        .community-involvement,
+        .join-us {
+            margin-top: 20px;
+        }
+
+        .vision h3,
+        .mission h3,
+        .why-choose h3,
+        .community-involvement h3,
+        .join-us h3 {
+            color: #3498db;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1.5em; /* Adjust the font size as needed */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1em; /* Adjust the font size as needed */
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em; /* Adjust the font size as needed */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            max-width: 500%, 80%;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{{ url_for('read_home') }}">Home</a>
+        <a href="{{ url_for('read_about') }}">About</a>
+        <a href="{{ url_for('read_courses') }}">Courses</a>
+        <a href="{{ url_for('read_staff') }}">Staff</a>
+        <a href="{{ url_for('read_blog') }}">Blog</a>
+        <a href="{{ url_for('read_contact') }}">Contact</a>
+    </nav>
+
+    <!-- Main Content - About Us -->
+    <div id="main-content">
+        <h2>About ASDA Learning Center</h2>
+        <p>Welcome to ASDA Learning Center, a place where education meets inspiration, and every student's potential is nurtured. Located in the heart of {{ location }}, our school is dedicated to providing a holistic learning experience that goes beyond the conventional classroom setting.</p>
+
+        <div class="vision-mission">
+            <h3>Our Vision and Mission</h3>
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>To be a leading institution in fostering creativity, critical thinking, and global citizenship.</p>
+            </div>
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>To empower students with knowledge, skills, and values that prepare them for a dynamic world.</p>
+            </div>
+        </div>
+
+        <div class="why-choose">
+            <h3>Why Choose ASDA Learning Center?</h3>
+            <ul>
+                <li>Experienced and passionate faculty members</li>
+                <li>State-of-the-art facilities for a conducive learning environment</li>
+                <li>Comprehensive curriculum designed for holistic development</li>
+                <li>Emphasis on extracurricular activities and personal growth</li>
+            </ul>
+        </div>
+
+        <div class="community-involvement">
+            <h3>Community Involvement</h3>
+            <p>At ASDA Learning Center, we believe in giving back to the community. Our students actively participate in community service projects, instilling a sense of social responsibility and empathy.</p>
+        </div>
+
+        <div class="join-us">
+            <h3>Join Us on the Journey of Learning and Growth</h3>
+            <p>Whether you're a student eager to embark on an educational adventure, a parent seeking a nurturing community, or an educator looking for a place to inspire,</p>
+
+            <p>Explore ASDA Learning Center, where education goes beyond the ordinary and sets the stage for a future of limitless possibilities.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 ASDA Learning Center. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
